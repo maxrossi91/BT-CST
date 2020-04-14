@@ -74,4 +74,9 @@ add_subdirectory(experiments)
 add_subdirectory(external/cst.jouni)
 add_subdirectory(external/repair_gn)
 
+# Easy hack instead of refactoring the whole CMake
+target_include_directories(blocktree external/cst.jouni/libraries/TextIndexes/includes)
+target_include_directories(blocktree external/cst.jouni/libraries/libcds2/includes)
+target_include_directories(blocktree external/cst.jouni/libraries/tools/includes)
+
 
